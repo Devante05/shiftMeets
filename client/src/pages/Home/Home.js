@@ -6,12 +6,12 @@ import "./index.css"
 
 function Home() {
   return (
-    <Container fluid>
+    <Container  fluid>
       <Row>
-        <Col size="md-6">
+        <Col size="md-4">
           <CreatePostForm />
         </Col>
-        <Col size="md-6 sm-12">
+        <Col size="md-4 sm-12">
           <PostsList />
         </Col>
       </Row>

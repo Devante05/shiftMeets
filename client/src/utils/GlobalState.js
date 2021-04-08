@@ -16,7 +16,7 @@ const initialState = {
   posts: [],
   currentPost: {
     _id: 0,
-    title: "",
+    location: "",
     body: "",
     author: ""
   },

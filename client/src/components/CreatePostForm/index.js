@@ -44,11 +44,11 @@ const CreatePostForm = () => {
         />
       </div>
       <h1>Create a meet</h1>
-      <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
-        <input className="form-control mb-5" required placeholder="Location" ref={locationRef} />
-        <textarea className="form-control mb-5" required placeholder="Body" ref={bodyRef} />
-        <input className="form-control mb-5" placeholder="Screen name" ref={authorRef} />
-        <button className="btn btn-success mt-3 mb-5" type="submit" disabled={state.loading}>
+      <form className="form-group mt-3 mb-3" onSubmit={handleSubmit}>
+        <input className="form-control mb-3" required placeholder="Location" ref={locationRef} />
+        <textarea className="form-control mb-3" required placeholder="Body" ref={bodyRef} />
+        <input className="form-control mb-3" placeholder="Screen name" ref={authorRef} />
+        <button className="btn btn-warning mt-3 mb-3 text-dark" type="submit" disabled={state.loading}>
           Save Post
         </button>
       </form>

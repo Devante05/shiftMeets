@@ -53,7 +53,7 @@ const PostsList = () => {
             <ListItem key={post._id}>
               <Link to={"/posts/" + post._id}>
                 <strong>
-                  {post.title} by {post.author}
+                  {post.location} by {post.author}
                 </strong>
               </Link>
               <DeleteBtn onClick={() => {removePost(post._id)}} />
@@ -61,10 +61,10 @@ const PostsList = () => {
           ))}
         </List>
       ) : (
-        <h3>You haven't added any posts yet!</h3>
+        <h3 >You haven't added any posts yet!</h3>
       )}
       <div className="mt-5">
-        <Link to="favorites">View favorites</Link>
+        <Link className = "text-dark" to="favorites">View favorites</Link>
       </div>
     </div>
   );

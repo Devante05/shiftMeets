@@ -15,7 +15,7 @@ function FavoritesList() {
             <ListItem key={post._id}>
               <Link to={"/posts/" + post._id}>
                 <strong>
-                  {post.title} by {post.author}
+                  {post.location} by {post.author}
                 </strong>
               </Link>
               <DeleteBtn onClick={() => {}} />
